@@ -71,10 +71,10 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
           # 检查并创建 R2 存储桶
-          BUCKET_INFO=$(wrangler r2 bucket list | grep "buling-imgbed-r2" || echo "")
+          BUCKET_INFO=$(wrangler r2 bucket list | grep "buling-imgbed-r3" || echo "")
           if [ -z "$BUCKET_INFO" ]; then
             echo "Creating R2 bucket..."
-            wrangler r2 bucket create buling-imgbed-r2 --location=apac
+            wrangler r2 bucket create buling-imgbed-r3 --location=apac
           else
             echo "R2 bucket already exists"
           fi
