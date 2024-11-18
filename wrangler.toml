@@ -13,7 +13,7 @@ database_id = "xxxx"
 
 [[r2_buckets]]
 binding = "MY_BUCKET"
-bucket_name = "buling-imgbed-r2"
+bucket_name = "buling-imgbed-r3"
 
 
 [vars]
